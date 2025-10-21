@@ -1,0 +1,394 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+
+    box-sizing: border-box;
+}
+
+/*Geral*/
+.espaco20{ clear: both; float: none; height: 20px; }
+.espaco30{ clear: both; float: none; height: 30px; }
+
+/*Alinhamento de Texto*/
+.texto-esquerda{ text-align: left; }
+.texto-direita{ text-align: right; }
+.texto-centro{ text-align: center; }
+
+/*Formatação de texto*/
+.titulo{
+    font-size: 1.5em;
+    color: #e0872f;
+    font-weight: 300;
+}
+
+/*Cor de Texto*/
+.texto-branco{ color: #ffffff; }
+
+/*Espessura do Texto*/
+.fonte-fina{ font-weight: 100; }
+.fonte-regular{ font-weight: 300; }
+.fonte-bold{ font-weight: 700;  }
+
+/*Float*/
+.float-left{ float: left; }
+.float-right{ float: right; }
+.clear{ clear: both; float: none; }
+
+/*Estilo Inputs do tipo Text*/
+input[type=text]{
+    border: 1px solid #d0d0d0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    background: #e0872f;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #fff;
+    transition: background 0.35s;
+}
+
+button:hover{
+    background: #ef5534;
+    cursor: pointer;
+}
+
+.form-group{
+    width: 85%;
+}
+
+#topo{
+    background: #fff;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+#menu-mobile{
+    display: none;
+}
+
+.corpo{
+    width: 1400px;
+    margin: auto;
+}
+
+.flex-top-between{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.flex-centro-space-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu-principal{
+    list-style: none;
+}
+
+#menu-principal li{
+    float: left;
+    padding: 5px 15px;
+}
+
+#menu-principal a{
+    text-decoration: none;
+    color: #05497d;
+    display: block;
+}
+
+#box-cotacao{
+    background: url("../imagens/fundos/Topo.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+#box-form-cotacao{
+    background: #fff;
+    max-width: 450px;
+    float: right;
+    padding: 40px;
+    margin: 120px 0;
+    border-radius: 5px;
+}
+
+#box-form-cotacao label{
+    color: #05497d;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.colunas-cotacao{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#box-saiba-mais{
+    background: rgba(5, 73, 125, 0.8);
+    padding: 40px 0 20px 0;
+}
+
+#box-saiba-mais h2{
+    font-size: 1.4em;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+#box-saiba-mais h3{
+    font-size: 1.2em;
+    color: #ffffff;
+    font-weight: 100;
+    padding: 0;
+    margin: 10px 0 20px 0;
+}
+
+#box-saiba-mais img{
+    margin: 0;
+}
+
+/*Seção Tipos de Serviços*/
+#box-tipos-servicos{
+    background: url("../imagens/fundos/Servicos.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    position: relative;
+}
+
+#box-tipos-servicos .corpo{
+    position: relative;
+    z-index: 2;
+}
+
+#box-tipos-servicos .titulo{
+    font-size: 1.8em;
+}
+
+#box-tipos-servicos #subtitulo{
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+    margin-bottom: 80px;
+}
+
+#transparencia-tipos-servicos{
+    background: rgba(15, 128, 113, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+/*Coluna 5*/
+.coluna5{
+    width: 15%;
+    padding: 40px 15px;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    transition: background 0.35s;
+}
+
+#box-tipos-servicos  .coluna5 .icone{
+    font-size: 4em;
+    color: #458473;
+}
+
+#box-tipos-servicos  .coluna5 header{
+    margin: 30px 0;
+}
+
+#box-tipos-servicos  .coluna5 .titulo{
+    color: #458473;
+}
+
+#box-tipos-servicos  .coluna5 p{
+    line-height: 1.6;
+    color: #458473;
+}
+
+/*Coluna 5 ao passar o mouse*/
+#box-tipos-servicos .coluna5:hover{
+    background: rgba(5,73,125, 0.8);
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+#box-tipos-servicos .coluna5:hover .icone{
+    color: #ffffff;
+}
+
+#box-tipos-servicos .coluna5:hover .titulo{
+    color: #ffffff;
+}
+
+#box-tipos-servicos .coluna5:hover p{
+    color: #ffffff;
+}
+
+/*Seção Tipos de Coberturas*/
+#box-tipos-coberturas{
+    background: url("../imagens/fundos/Coberturas.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    position: relative;
+}
+
+#box-tipos-coberturas .corpo{
+    position: relative;
+    z-index: 2;
+}
+
+#box-tipos-coberturas #subtitulo{
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+    margin-bottom: 80px;
+}
+
+#transparencia-tipos-coberturas{
+    background: rgba(224, 135, 47, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+#box-tipos-coberturas  .coluna5 .icone{
+    font-size: 4em;
+    color: #9c3305;
+}
+
+#box-tipos-coberturas  .coluna5 header{
+    margin: 30px 0;
+}
+
+#box-tipos-coberturas  .coluna5 .titulo{
+    color: #9c3305;
+}
+
+#box-tipos-coberturas  .coluna5 p{
+    line-height: 1.6;
+    color: #9c3305;
+}
+
+/*Coluna 5 ao passar o mouse*/
+#box-tipos-coberturas .coluna5:hover{
+    background: rgba(156, 51, 5, 0.8);
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+#box-tipos-coberturas .coluna5:hover .icone{
+    color: #ffffff;
+}
+
+#box-tipos-coberturas .coluna5:hover .titulo{
+    color: #ffffff;
+}
+
+#box-tipos-coberturas .coluna5:hover p{
+    color: #ffffff;
+}
+
+@media(max-width: 1400px) {
+
+    .corpo{ width: 90%; }
+
+}
+
+@media(max-width: 1024px) {
+
+    #box-tipos-servicos .colunas, #box-tipos-coberturas .colunas {
+        justify-content: center;
+    }
+
+    #box-tipos-servicos .coluna5, #box-tipos-coberturas .coluna5{
+        width: 28%;
+        margin-bottom: 15px;
+        justify-content: center;
+        margin: 5px;
+    }
+
+}
+
+@media(max-width: 960px){
+
+    #topo{
+        padding: 20px 0;
+    }
+
+    #topo .corpo{
+        display: block;
+        text-align: center;
+    }
+
+    #topo nav{
+        width: 100%;
+    }
+
+    nav{
+        display: block;
+    }
+
+    #menu-mobile{
+        display: block;
+        margin: 10px 0;
+    }
+    
+    #menu-mobile:hover{
+        cursor: pointer;
+    }
+
+    #menu-principal{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: none;
+    }
+
+    #menu-principal li{
+        text-align: center;
+        float: none;
+        clear: both;
+        padding: 15px 0;
+        border-bottom: 1px dashed #efefef;
+    }
+
+    #box-tipos-servicos .coluna5, #box-tipos-coberturas .coluna5{
+        width: 43%;
+        margin-bottom: 15px;
+        justify-content: center;
+        margin: 5px;
+    }
+
+}
+
+@media(max-width: 860px) {
+    #box-tipos-servicos .coluna5, #box-tipos-coberturas .coluna5{
+        width: 100%;
+        margin-bottom: 15px;
+        justify-content: center;
+        margin: 5px;
+    }
+}

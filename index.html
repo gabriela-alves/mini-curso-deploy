@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ekobe</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icones-customizados.css"/>
+
+    <!-- Modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <link rel="stylesheet" href="assets/css/estilo.css"/>
+</head>
+<body>
+
+    <header id="topo">
+        <div class="corpo flex-centro-space-between">
+            <div class="texto-centro">
+                <img src="assets/imagens/logo/logo.png" width="180"/>
+            </div>
+
+            <nav>
+                <div id="menu-mobile"><span class="material-icons">menu</span></div>
+                <ul id="menu-principal">
+                    <li><a href="#modal-inscreva-se" rel="modal:open">Seguro Residencial</a></li>
+                    <li><a href="#modal-inscreva-se" rel="modal:open">Seguro Celular</a></li>
+                    <li><a href="#modal-inscreva-se" rel="modal:open">Seguro Viagem</a></li>
+                    <li><a href="#modal-inscreva-se" rel="modal:open">Previdência Privada</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="box-cotacao">
+
+        <div class="corpo">
+
+            <article>
+                <div id="box-form-cotacao">
+
+                    <h1 class="titulo">Faça aqui a cotação do seu Seguro</h1>
+
+                    <form action="" method="post" name="formDados">
+
+                        <label for="cep">CEP</label>
+                        <div class="clear"></div>
+                        <input type="text" name="cep" id="cep" value="">
+                        <div style="color: #05497d; font-size: 0.8em;">Não sabe seu CEP? Consulte aqui.</div>
+                        <div class="espaco20"></div>
+
+                        <div class="colunas-cotacao">
+                            <div class="form-group">
+                                <label for="rua">Rua</label>
+                                <div class="clear"></div>
+                                <input type="text" name="rua" id="rua" value="">
+                            </div>
+
+                            <div>
+                                <label for="numero">Número</label>
+                                <div class="clear"></div>
+                                <input type="text" name="numero" id="numero" value="">
+                            </div>
+                        </div>
+                        <div class="espaco20"></div>
+
+                        <label for="complemento">Complemento</label>
+                        <div class="clear"></div>
+                        <input type="text" name="complemento" id="complemento" value="">
+                        <div class="espaco20"></div>
+
+                        <div class="colunas-cotacao">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <div class="clear"></div>
+                                <input type="text" name="nome" id="nome" value="">
+                            </div>
+
+                            <div>
+                                <label for="telefone">Telefone</label>
+                                <div class="clear"></div>
+                                <input type="text" name="telefone" id="telefone" value="">
+                            </div>
+                        </div>
+                        <div class="espaco20"></div>
+
+                        <label for="email">E-mail</label>
+                        <div class="clear"></div>
+                        <input type="text" name="email" id="email" value="">
+                        <div class="espaco20"></div>
+
+                        <div class="texto-centro">
+                            <button type="submit" name="enviar" id="enviar">COTAR AGORA</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </article>
+
+        </div>
+
+        <article id="box-saiba-mais" class="clear">
+
+            <div class="corpo texto-centro">
+
+                <h2>Mantenha sua residência sempre segura</h2>
+                <h3>Saiba mais</h3>
+                <img src="assets/imagens/icones/seta_baixo.svg" width="30"/>
+
+            </div>
+
+        </article>
+
+    </section>
+
+    <section id="box-tipos-servicos">
+
+        <div id="transparencia-tipos-servicos"></div>
+
+        <article class="corpo">
+
+            <header class="titulo texto-branco fonte-bold texto-centro">TIPOS DE SERVIÇOS - UPDATED</header>
+            <div class="espaco20"></div>
+
+            <p id="subtitulo" class="texto-branco texto-centro fonte-fina">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+
+            <div class="colunas flex-top-between">
+
+                <article class="coluna5">
+                    <span class="icone icon-water"></span>
+                    <header class="titulo fonte-bold">Lorem ipsum</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+                </article>
+
+                <article class="coluna5">
+                    <span class="icone icon-electronics"></span>
+                    <header class="titulo fonte-bold">Lorem ipsum</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+                </article>
+
+                <article class="coluna5">
+                    <span class="icone icon-furniture-and-household"></span>
+                    <header class="titulo fonte-bold">Lorem ipsum</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+                </article>
+
+                <article class="coluna5">
+                    <span class="icone icon-tools-and-utensils"></span>
+                    <header class="titulo fonte-bold">Lorem ipsum</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+                </article>
+
+                <article class="coluna5">
+                    <span class="icone icon-improvement"></span>
+                    <header class="titulo fonte-bold">Lorem ipsum</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+                </article>
+
+            </div>
+
+        </article>
+
+    </section>
+
+    <section id="box-tipos-coberturas">
+
+        <div id="transparencia-tipos-coberturas"></div>
+
+        <article class="corpo">
+
+            <header class="titulo texto-branco fonte-bold texto-centro">TIPOS DE COBERTURAS</header>
+            <div class="espaco20"></div>
+
+            <p id="subtitulo" class="texto-branco texto-centro fonte-fina">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+
+            <div class="colunas flex-top-between">
+
+                <article class="coluna5">
+                    <span class="icone icon-nature"></span>
+                    <header class="titulo fonte-bold">Lorem ipsum</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+                </article>
+
+                <article class="coluna5">
+                    <span class="icone icon-technology"></span>
+                    <header class="titulo fonte-bold">Lorem ipsum</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+                </article>
+
+                <article class="coluna5">
+                    <span class="icone icon-weather"></span>
+                    <header class="titulo fonte-bold">Lorem ipsum</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+                </article>
+
+                <article class="coluna5">
+                    <span class="icone icon-avatar"></span>
+                    <header class="titulo fonte-bold">Lorem ipsum</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+                </article>
+
+                <article class="coluna5">
+                    <span class="icone icon-couple"></span>
+                    <header class="titulo fonte-bold">Lorem ipsum</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae ligula consequat justo suscipit finibus at in ipsum. Curabitur ut urna diam. Fusce ex ex, vestibulum ut enim eget, congue pretium eros. Mauris ullamcorper id enim eu lacinia. Cras convallis, ante et gravida laoreet, elit nulla luctus justo</p>
+                </article>
+
+            </div>
+
+        </article>
+
+    </section>
+
+    <div id="modal-inscreva-se" class="modal">
+        <h3 class="titulo texto-centro">Inscreva-se e saiba mais</h3>
+
+        <form action="" method="post" name="formIncrevaSe" id="formIncrevaSe">
+            <input type="text" name="nome_completo" id="nome_completo" placeholder="Informe seu Nome">
+            <div class="espaco20"></div>
+            <input type="text" name="cpf" id="cpf" placeholder="Informe seu CPF">
+            <div class="espaco20"></div>
+
+            <div class="texto-centro">
+                <button>Increver-se</button>
+            </div>
+        </form>
+        <div class="espaco20"></div>
+    </div>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/geral.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
